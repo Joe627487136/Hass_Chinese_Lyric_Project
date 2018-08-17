@@ -1,0 +1,39 @@
+<!doctype html>
+<title>Flaskr作诗器</title>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+<div class=page>
+  <h1>Flaskr作诗器</h1>
+  <div class=metanav>
+    <a href="/map">全唐诗人图</a>
+    <a href="/paint">山水画作图</a>
+  </div>
+
+  <form action="" method="post">
+  输入藏头:<br>
+  <input type="text" name="cangtou">
+  <input type="submit" value="输入">
+  </form>
+  <br>
+  <br>
+  <br>
+  {% for entry in entries %}
+  <p><small>{{entry}}</small></p>
+  {% endfor %}
+
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+<footer>
+  <p><small>制作人: 周雪轩， 张稼轩， 赵冠伦</small></p>
+  <p><small>Contact information: <a href="mailto:xuexuan.zhou@gmail.com">xuexuan.zhou@gmail.com</a>.</small></p>
+</footer>
+
+</div>
